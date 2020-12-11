@@ -1,0 +1,17 @@
+Questions
+---------
+
+1   How have if-blocks  been translated into GIMPLE  statements? Can you
+    differentiate between conditional and unconditional gotos?
+
+ANSWER :If-blocks are turned into conditional gotos and further to labels.Conditional gotos have two labels one for if block and other for else block whereas unconditional gotos are self declared.
+
+2   Repeat  the  above compilation,  but  now  asking for  another  dump
+    that  of  the pass  "cfg".  View  this  pass  and say  whether  this
+    representation makes it easier to  read and understand GIMPLEs. Draw
+    the control-flow graph  of the program A-2.c on a  piece of paper by
+    looking at the CFG dump.
+
+ANSWER :yes for sure this representation makes it easy to read and understand gimple but the code length is too large.
+
+

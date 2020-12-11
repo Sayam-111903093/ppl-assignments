@@ -1,0 +1,14 @@
+Questions
+---------
+
+1  Do you notice that each usage of local variable as an operand uses a suffix that can be tracked to it's assignment? Why do some variables have a suffix     `(D)'?
+
+ANS  :'(D)' means that it is missing a definition.same as that used in code that is 'c' is undefined in first conditional statement.
+
+2  Find the point in the CFG in  which the paths of the two assignments to variable `a'  and `b' merge. You will notice  that PHI statements have  been         introduced.  Can  you   guess  the  syntax  of  the  PHI statements?
+
+ANS  :Syntax of PHI statement is PHI < prec_1, prec_2,... > where prec_i is name(bb) where name is the name of variable and bb is the number block in which       it is declared.Control flows from preceding BB to current BB.
+
+3  Can you think of an example in which a PHI node merges more than two versions of a variable?
+
+ANS  :This can be in  if-else block or switch statement.

@@ -1,0 +1,24 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 1 "Function in lisp to find nth element from a list of m elements"-1|
+   #13Y(00 00 00 00 00 00 00 00 20 01 C5 19 01)
+   ("Function in lisp to find nth element from a list of m elements")
+   |COMMON-LISP|::|NIL|)
+#Y(#:|3 8 (DEFUN NTH_ELE (N L) ...)-2|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|NTH_ELE| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|NTH_ELE|
+       #35Y(00 00 00 00 02 00 00 00 26 03 92 01 0A 00 19 03 9E 5B 19 03 93 01
+            76 AE 8E AC 75 97 02 95 02 29 02 05 71)
+       () (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP-USER|::|N| |COMMON-LISP-USER|::|L|) |COMMON-LISP|::|NIL|
+       1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|12 12 (PRINC (NTH_ELE 5 '#))-3|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA DB 70 02 38 01 31 90 19 01)
+   (5.
+    (|COMMON-LISP-USER|::|A| |COMMON-LISP-USER|::|B| |COMMON-LISP-USER|::|C|
+     |COMMON-LISP-USER|::|D| |COMMON-LISP-USER|::|E| |COMMON-LISP-USER|::|F|
+     |COMMON-LISP-USER|::|G|)
+    |COMMON-LISP-USER|::|NTH_ELE|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))

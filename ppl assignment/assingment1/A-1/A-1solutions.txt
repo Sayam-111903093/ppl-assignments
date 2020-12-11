@@ -1,0 +1,27 @@
+Questions
+---------
+
+        1   How  do the  declarations  look in  the  GIMPLE? Specifically,  what
+            happens to multiple  variables declared and initialized  on the same
+            line? What happens to global declaration [int Z]?
+
+   ANSWER : In Gimple we see that there is one declaration per line.It looks simple and presized.
+	    Value of global declaration Z has been disappeared.if we want it ,it should be declared as local             varaiable.
+
+        2   How are complex  expressions such as [c  = a * b +  25] broken down?
+            Can you  determine a  rule as  to when  temporary variables  will be
+            introduced?
+
+   ANSWER : complex expressions are broken down into simple expressions and this simple expressions are assigned             with some  temporary variable and then evaluated.Temporary variables are used to calculate the middle             steps i.e intermediate steps between the operations.
+
+        3   How are  floats/doubles represented in  GIMPLE? What happens  when a
+            float/double is assigned to an integer in [Z = r]?
+
+   ANSWER : They are represented using scientific notations.when float is assigned to an integer it is first                    converted to an integer and then assigned to temporary variable and further assigned to Z.
+
+        4   How  are reads/writes  to the  global variable  Z performed?  Why is there a temporary introduced  for             the statement [Z = Z  + 1] but not for the statements [q = Z] or [Z = p]?
+    
+   ANSWER : Reads/writes performed to global variable by data stored in local variable.as Z+1 cannot be assigned to             Z,it is stored as temporary variable.For statements q=Z or Z=p both are of same data type.  
+
+ 
+	    
